@@ -1,0 +1,28 @@
+{
+  "name": "mocha_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-jenkins-reporter": "^0.3.7",
+    "nconf": "^0.10.0",
+    "optimist": "^0.6.1",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^6.0.0",
+    "mocha": "^5.2.0",
+    "request": "^2.87.0",
+    "should": "^13.2.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "test": "mocha test/api-test.js --config=config/prod_aus_config.json --reporter spec"
+  },
+  "author": "nitish",
+  "license": "ISC"
+}
